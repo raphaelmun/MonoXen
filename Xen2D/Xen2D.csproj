@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53F8D564-0D28-446B-9A77-84865DA6FF1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xen2D</RootNamespace>
+    <AssemblyName>Xen2D</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\..\..\..\Library\Frameworks\Mono.framework\External\xbuild\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Collision\CollidableObject.cs" />
+    <Compile Include="Collision\CollisionInteractionType.cs" />
+    <Compile Include="Collision\CollisionChecker.cs" />
+    <Compile Include="Collision\CollisionRuleEntry.cs" />
+    <Compile Include="Collision\CollisionRuleSet.cs" />
+    <Compile Include="Collision\CollisionClasses.cs" />
+    <Compile Include="Collision\CollisionRuleSetAll.cs" />
+    <Compile Include="Collision\CollisionLifetimeEntry.cs" />
+    <Compile Include="Collision\CollisionLifetimeTracker.cs" />
+    <Compile Include="Collision\CollisionEvent.cs" />
+    <Compile Include="Collision\CollisionDetector.cs" />
+    <Compile Include="Collision\CollidableObjectComparer.cs" />
+    <Compile Include="Collision\SweepAndPruneCollisionDetector.cs" />
+    <Compile Include="Collision\ICollisionDetector.cs" />
+    <Compile Include="Collision\ICollisionRuleSet.cs" />
+    <Compile Include="Collision\ExtentIntersector.cs" />
+    <Compile Include="Core\ContentIdentifierAttribute.cs" />
+    <Compile Include="Core\TextureInfoCache.cs" />
+    <Compile Include="Core\TextureSizeAttribute.cs" />
+    <Compile Include="Core\SongCache.cs" />
+    <Compile Include="Core\SortedRenderable2DCollection.cs" />
+    <Compile Include="Core\IDrawable2D.cs" />
+    <Compile Include="Core\IUpdateableEx.cs" />
+    <Compile Include="Core\SoundEffectCache.cs" />
+    <Compile Include="Core\SpriteFontCache.cs" />
+    <Compile Include="Core\TextureCache.cs" />
+    <Compile Include="Core\VectorUtility.cs" />
+    <Compile Include="Core\Viewport2D.cs" />
+    <Compile Include="Core\ScreenUtility.cs" />
+    <Compile Include="Core\Interpolator.cs" />
+    <Compile Include="Core\MatrixUtility.cs" />
+    <Compile Include="Core\IRenderable.cs" />
+    <Compile Include="Core\Globals.cs" />
+    <Compile Include="Core\XenCache.cs" />
+    <Compile Include="Core\XenMath.cs" />
+    <Compile Include="Primitives\CompositeExtent.cs" />
+    <Compile Include="Primitives\CircularExtent.cs" />
+    <Compile Include="Primitives\CompositeRenderable2DBase.cs" />
+    <Compile Include="Primitives\PlaceholderRenderable2DBase.cs" />
+    <Compile Include="Primitives\PositionTimeEntry2D.cs" />
+    <Compile Include="Primitives\PositionTimeHistory2D.cs" />
+    <Compile Include="Primitives\ShapeUtility.cs" />
+    <Compile Include="Primitives\ICircularExtent.cs" />
+    <Compile Include="Primitives\ShapePolygon2DBase.cs" />
+    <Compile Include="Primitives\ShapeComplexPolygon.cs" />
+    <Compile Include="Primitives\PolygonExtent.cs" />
+    <Compile Include="Primitives\IPolygonExtent.cs" />
+    <Compile Include="Primitives\VectorRectangle.cs" />
+    <Compile Include="Primitives\RectangularExtent.cs" />
+    <Compile Include="Primitives\IRectangularExtent.cs" />
+    <Compile Include="Primitives\Renderable2DBase.cs" />
+    <Compile Include="Primitives\ExtentBase.cs" />
+    <Compile Include="Primitives\Space2DTranslation.cs" />
+    <Compile Include="Primitives\IExtent.cs" />
+    <Compile Include="Primitives\RenderableBase.cs" />
+    <Compile Include="Primitives\IRectangle.cs" />
+    <Compile Include="Primitives\IShape.cs" />
+    <Compile Include="Primitives\ShapePolygon.cs" />
+    <Compile Include="Primitives\ShapeCircle.cs" />
+    <Compile Include="Sprites\BasicLine2D.cs" />
+    <Compile Include="Sprites\AssetDescriptor.cs" />
+    <Compile Include="Sprites\AnimationStripDescriptor.cs" />
+    <Compile Include="Sprites\AnimatedSprite.cs" />
+    <Compile Include="Sprites\CachedTextureDescriptor.cs" />
+    <Compile Include="Sprites\CompositeSprite.cs" />
+    <Compile Include="Primitives\Component2D.cs" />
+    <Compile Include="Sprites\I2DDisplayModifiers.cs" />
+    <Compile Include="Sprites\RenderMode.cs" />
+    <Compile Include="Sprites\IAnimatedSprite.cs" />
+    <Compile Include="Sprites\ITextureInfo.cs" />
+    <Compile Include="Sprites\StaticSprite.cs" />
+    <Compile Include="Sprites\ISprite.cs" />
+    <Compile Include="Sprites\Sprite2D.cs" />
+    <Compile Include="Sprites\SinglePixel.cs" />
+    <Compile Include="Sprites\SpriteBatchEx.cs" />
+    <Compile Include="Sprites\SpriteDisplayAttributes.cs" />
+    <Compile Include="Text\XenString.cs" />
+    <Compile Include="MatrixEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XenAspects\XenAspects.csproj">
+      <Project>{26C71CDE-D3EA-4299-9572-03DE47C7B727}</Project>
+      <Name>XenAspects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
