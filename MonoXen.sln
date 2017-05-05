@@ -1,13 +1,15 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Tweens", "Demos\Demo_Tweens\Demo_Tweens.csproj", "{D58CB00D-8784-44C6-9F4D-2CF727AEDBAA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{144B7F5F-FC5E-4166-AC85-CB8CC59FF55E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XenAspects", "XenAspects\XenAspects.csproj", "{26C71CDE-D3EA-4299-9572-03DE47C7B727}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xen2D", "Xen2D\Xen2D.csproj", "{53F8D564-0D28-446B-9A77-84865DA6FF1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Tweens", "Demos\Demo_Tweens\Demo_Tweens.csproj", "{D58CB00D-8784-44C6-9F4D-2CF727AEDBAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Sprites", "Demos\Demo_Sprites\Demo_Sprites.csproj", "{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,13 @@ Global
 		{53F8D564-0D28-446B-9A77-84865DA6FF1A}.Debug|x86.Build.0 = Debug|Any CPU
 		{53F8D564-0D28-446B-9A77-84865DA6FF1A}.Release|x86.ActiveCfg = Release|Any CPU
 		{53F8D564-0D28-446B-9A77-84865DA6FF1A}.Release|x86.Build.0 = Release|Any CPU
+		{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}.Debug|x86.ActiveCfg = Debug|x86
+		{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}.Debug|x86.Build.0 = Debug|x86
+		{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}.Release|x86.ActiveCfg = Release|x86
+		{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D58CB00D-8784-44C6-9F4D-2CF727AEDBAA} = {144B7F5F-FC5E-4166-AC85-CB8CC59FF55E}
+		{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5} = {144B7F5F-FC5E-4166-AC85-CB8CC59FF55E}
 	EndGlobalSection
 EndGlobal

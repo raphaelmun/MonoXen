@@ -45,8 +45,6 @@ namespace Demo_Tweens
                 Exit();
 #endif
 
-            // TODO: Add your update logic here
-
             base.Update( gameTime );
         }
 

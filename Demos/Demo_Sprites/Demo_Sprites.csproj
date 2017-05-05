@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D58CB00D-8784-44C6-9F4D-2CF727AEDBAA}</ProjectGuid>
+    <ProjectGuid>{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Demo_Tweens</RootNamespace>
-    <AssemblyName>Demo_Tweens</AssemblyName>
+    <RootNamespace>Demo_Sprites</RootNamespace>
+    <AssemblyName>Demo_Sprites</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
   </PropertyGroup>
@@ -44,9 +44,12 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Icon.png" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb">
-      <Link>Content\ContentPack.mgcb</Link>
-    </MonoGameContentReference>
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -87,17 +90,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XenAspects\XenAspects.csproj">
-      <Project>{26C71CDE-D3EA-4299-9572-03DE47C7B727}</Project>
-      <Name>XenAspects</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Xen2D\Xen2D.csproj">
       <Project>{53F8D564-0D28-446B-9A77-84865DA6FF1A}</Project>
       <Name>Xen2D</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
+    <ProjectReference Include="..\..\XenAspects\XenAspects.csproj">
+      <Project>{26C71CDE-D3EA-4299-9572-03DE47C7B727}</Project>
+      <Name>XenAspects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
