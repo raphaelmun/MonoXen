@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{031BB49C-0EDE-44F6-9D11-3AD2B83D58D5}</ProjectGuid>
+    <ProjectGuid>{E34E1F9C-9C36-4483-88A3-ADC102A336C1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Demo_Sprites</RootNamespace>
-    <AssemblyName>Demo_Sprites</AssemblyName>
+    <RootNamespace>Demo_AnimatedSprite</RootNamespace>
+    <AssemblyName>Demo_AnimatedSprite</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
   </PropertyGroup>
@@ -44,11 +44,6 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Icon.png" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
     <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
     <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
     <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
@@ -92,6 +87,9 @@
     <Content Include="libSDL2-2.0.0.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Xen2D\Xen2D.csproj">
