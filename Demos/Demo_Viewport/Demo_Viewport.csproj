@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{E34E1F9C-9C36-4483-88A3-ADC102A336C1}</ProjectGuid>
+    <ProjectGuid>{1AC201B7-7EFC-44DA-9DC2-7C2ED60FDCF0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Demo_AnimatedSprite</RootNamespace>
-    <AssemblyName>Demo_AnimatedSprite</AssemblyName>
+    <RootNamespace>Demo_Viewport</RootNamespace>
+    <AssemblyName>Demo_Viewport</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
   </PropertyGroup>

@@ -44,16 +44,9 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Icon.png" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
-    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb">
+      <Link>Content\ContentPack.mgcb</Link>
+    </MonoGameContentReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
