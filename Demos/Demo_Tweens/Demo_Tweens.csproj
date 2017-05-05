@@ -44,12 +44,10 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Icon.png" />
+    <MonoGameContentReference Include="..\..\ContentPack\ContentPack.mgcb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="x64\libopenal.so.1">
